@@ -1,13 +1,17 @@
 package com.joestelmach.natty;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map.Entry;
+import java.util.TimeZone;
+
 import junit.framework.Assert;
-import org.apache.log4j.Level;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import java.text.DateFormat;
-import java.util.*;
-import java.util.Map.Entry;
 
 /**
  * Runs the parser through the various date formats 
@@ -371,8 +375,6 @@ public class DateTest extends AbstractTest {
   public static void main(String[] args) {
 
     String value="easter '06";
-
-    org.apache.log4j.Logger.getRootLogger().setLevel(Level.INFO);
 
     Parser parser = new Parser();
     List<DateGroup> groups = parser.parse(value);

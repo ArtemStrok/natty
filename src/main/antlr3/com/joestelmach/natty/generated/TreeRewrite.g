@@ -10,9 +10,6 @@ options {
 @header { package com.joestelmach.natty.generated; }
 
 @members {
-  private static org.slf4j.Logger _logger =
-    org.slf4j.LoggerFactory.getLogger(com.joestelmach.natty.generated.TreeRewrite.class);
-
   @Override
   protected Object recoverFromMismatchedToken(IntStream input, int ttype, BitSet follow)
       throws RecognitionException {
@@ -27,7 +24,6 @@ options {
 
   @Override
   public void emitErrorMessage(String msg) {
-    _logger.error(msg);
   }
 }
 

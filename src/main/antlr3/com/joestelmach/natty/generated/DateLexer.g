@@ -3,21 +3,13 @@ lexer grammar DateLexer;
 @header { package com.joestelmach.natty.generated; }
 
 @members {
-  private static org.slf4j.Logger _logger =
-    org.slf4j.LoggerFactory.getLogger(com.joestelmach.natty.generated.DateLexer.class);
 
   @Override
   public void displayRecognitionError(String[] tokenNames, RecognitionException re) {
-    if (_logger.isDebugEnabled()) {
-      String message = getErrorHeader(re);
-      try { message += getErrorMessage(re, tokenNames); } catch(Exception e) {}
-      _logger.debug(message);
-    }
   }
 
   @Override
   public void emitErrorMessage(String msg) {
-    _logger.error(msg);
   }
 }
 

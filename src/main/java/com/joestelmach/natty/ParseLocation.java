@@ -2,7 +2,7 @@ package com.joestelmach.natty;
 
 /**
  * Represents an invocation of a parse rule
- * 
+ *
  * @author Joe Stelmach
  */
 public class ParseLocation {
@@ -11,22 +11,22 @@ public class ParseLocation {
   private int _line;
   private int _start;
   private int _end;
-  
-  public String getRuleName() {
+
+    public String getRuleName() {
     return _ruleName;
   }
   public void setRuleName(String ruleName) {
     _ruleName = ruleName;
   }
-  
-  public String getText() {
+
+    public String getText() {
     return _text;
   }
   public void setText(String text) {
     _text = text;
   }
-  
-  public int getLine() {
+
+    public int getLine() {
     return _line;
   }
   public void setLine(int line) {
@@ -46,8 +46,8 @@ public class ParseLocation {
   public void setEnd(int end) {
     _end = end;
   }
-  
-  public String toString() {
+
+    public String toString() {
     return _text;
   }
 }
